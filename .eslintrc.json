@@ -1,3 +1,30 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:import/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "react/no-unknown-property": 0,
+    "react/prop-types": [1, { "ignore": ["className"] }],
+    "react/react-in-jsx-scope": 0,
+    "import/no-unused-modules": [
+      1,
+      {
+        "missingExports": true,
+        "unusedExports": true
+      }
+    ],
+    "import/no-unresolved": "error",
+    "prettier/prettier": "error",
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ]
+  },
+  "ignorePatterns": ["node_modules/", ".next/", "out/", "public/", "/scripts"]
 }

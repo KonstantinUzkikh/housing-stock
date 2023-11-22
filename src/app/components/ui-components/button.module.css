@@ -1,0 +1,18 @@
+.button {
+  width: 7rem;
+  border-radius: 5px;
+  border: 1px gray solid;
+  color: #737373;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #595959;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button:disabled {
+  opacity: 50%;
+  box-shadow: none;
+  cursor:auto;
+}
